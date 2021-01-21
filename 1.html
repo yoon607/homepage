@@ -5,26 +5,73 @@
   <meta charset="utf-8">
 </head>
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Noto+Serif+KR:wght@300&display=swap');
+
+  a {color:black;
+     text-decoration:none;
+    font-family: 'Bodoni Moda', serif;
+ }
+ body {margin:0; }
+  h1 {font-size: 50px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin:0;
+    padding:20px; }
+
+  .category { list-style-type: none;
+    font-size:30px;
+    text-align: center;
+    width: 150px;
+    margin:0px;
+    padding:10px;
+  border-right: 1px solid black }
+  h2 {font-family: 'Bodoni Moda', serif; margin:0px;}
+  h3 {font-family: 'Noto Serif KR', serif; margin:10px;}
+  p {font-family: 'Noto Serif KR', serif;}
+  #main { display:grid;
+       grid-template-columns: 180px auto;}
+ #selected {color:red; text-decoration:underline;}
+ .about {margin: 20px;}
+ .text { margin:0px;}
+
+@media (max-width:800px)
+{#main { display:block; }
+.category {display: none;}
+h1 {font-size:40px;}
+
+}
+
+</style>
+
 <body>
+
   <h1><a href="index.html">Map of an Aesthetic Mind</a></h1>
 
-    <ul>
-      <li><a href="1.html">about</a></li>
-      <li><a href="2.html">project</a></li>
-      <li><a href="3.html">review</a></li>
-      <li><a href="4.html">essay</a></li>
-    </ul>
-    
-  <h2>About</h2>
-  <h3>JiHye Yoon : 윤지혜</h3>
+  <div id="main">
+      <ul class="category">
+        <li><a href="1.html" id="selected">about</a></li>
+        <li><a href="2.html">project</a></li>
+        <li><a href="3.html">review</a></li>
+        <li><a href="4.html">essay</a></li>
+      </ul>
 
-  <img src="human.jpg" width="500px"><br>
 
-  <p>도시, 건축, 공간, 장소를 글과 시각예술을 통해 탐구하고 있다.
-    <br>미각과 후각을 비롯한 감각의 작동을 이해하고 실험하고자 한다.
-    <br>미적인 모든 것에 관심이 있다. 탐미주의적 노트를 2015년부터 작성하고 있는데, 이제 아날로그적 기록 방식에서 벗어나 웹페이지상에 흔적을 남기려 한다.
-    <br>유유하게 언어 공부를 하는 중이다. 한국어 영어 프랑스어에 이어 컴퓨터와의 대화도 시도한다.
-    <br>장차 아주 미스테리한 웹사이트를 만들 준비를 하고 있다. </p>
-  <br>Based in Seoul and London
-  <br><a href="https://www.instagram.com/aubby_o8/" target="_blank" title="aubby_o8">instagram</a> <a href="https://brunch.co.kr/@yoon607" target="_blank" title="지도그림">brunch</a>
+      <div class="about">
+        <h2>About</h2>
+        <h3>JiHye Yoon : 윤지혜</h3>
+
+        <img src="human.jpg" width="500px"><br>
+
+        <p class="text">도시, 건축, 공간, 장소를 글과 시각예술을 통해 탐구하고 있다.
+          <br>미각과 후각을 비롯한 감각의 작동을 이해하고 실험하고자 한다.
+          <br>미적인 모든 것에 관심이 있다. 탐미주의적 노트를 2015년부터 작성하고 있는데, 이제 아날로그적 기록 방식에서 벗어나 웹페이지상에 흔적을 남기려 한다.
+          <br>유유하게 언어 공부를 하는 중이다. 한국어 영어 프랑스어에 이어 컴퓨터와의 대화도 시도한다.
+          <br>장차 아주 미스테리한 웹사이트를 만들 준비를 하고 있다. </p>
+        <p>Based in Seoul and London
+        <br><a href="https://www.instagram.com/aubby_o8/" target="_blank" title="aubby_o8">instagram</a> <a href="https://brunch.co.kr/@yoon607" target="_blank" title="지도그림">brunch</a>
+        </p>
+      </div>
+  </div>
 </body>
+</html>
